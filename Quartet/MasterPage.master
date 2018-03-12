@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Quartet</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <section class="hero is-white">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item is-info" href="/home"><i class="fas fa-cut" style="color: #CF000F;"></i> &nbsp;Quartet</a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-active" href="/home">
+                    Home
+                  </a>
+                  <a class="navbar-item" href="/services">
+                    Services
+                  </a>
+                  <a class="navbar-item" href="/about">
+                    About Us
+                  </a>
+                  <a class="navbar-item" href="/feedback">
+                    Feed Back
+                  </a>
+                  <span class="navbar-item">
+                    <a class="button is-info is-outlined is-small" href="/login">
+                      <span class="icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                      </span>
+                      <span>Login</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+  </section>
+
+
+  <form id="form1" runat="server">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+   
+  </form>
+  <footer class="footer is-fixed-bottom" style="background-color: #fff;"> 
+    <div class="container">
+        <hr />
+      <div class="content has-text-centered has-text-white">
+        <p><strong>&copy; Quartet 2018</strong></p>
+         <p><strong>Made By:</strong></p><a href="https://github.com/mosuswalks"> Mohamed Abdi | 100-649-804 </a><br /><a>Furba Sherpa | 101-085-699</a><br /><a>Robert Magyair | 101-085-699</a>
+        <p>
+          <a class="icon" href="https://github.com/mosuswalks">
+            <i class="fab fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
