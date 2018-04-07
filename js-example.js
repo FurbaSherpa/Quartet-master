@@ -17,14 +17,31 @@ function checkDate(calendar) {
   
 }
 
-
-function numberEvents(calendar) {
+//add linebreaks and opening and closing quotations
+function formatCalendar(calendar) {
+  var calendarStr = "";
   
+  for (var i = 0; i < calendar.length; i++) {
+    calendarStr = calendarStr + '    ' + calendar[i].date + '\\n';
+    for (var j = 0; j < calendar[i].event.length; j++) {
+      calendarStr = calendarStr + '        ' + calendar[i].event[j] + '\\n';
+    }
+  }
+  
+  //remove the last linebreak from the string
+  calendarStr = '\\n' + calendarStr.slice(0,-2);
+  
+  console.log(calendarStr);
+  
+}
+
+
+function numberEvents(calendar) { 
   for (var i = 0; i < calendar.length; i++) {
     //check if calendar.event is an array and not a string;
     //check if the length of the array is greater than 1
-    if (calendar[i].event instanceof Array && calendar[i].event.length > 1) {
-      var eventNumber = 1;
+    if (calendar[i].event instanceof Array && calendar[i].event.length > 0) {
+      var eventNumber = 0;
       var length = (Object.keys(calendar[i].event).length);
       for (j = 0; j < length; j++) {
         calendar[i].event[j] = eventNumber + ': ' + calendar[i].event[j];
@@ -39,7 +56,7 @@ checkDate(sampleCalendar);
 
 numberEvents(sampleCalendar);
 
-console.log(sampleCalendar);
+formatCalendar(sampleCalendar);
 
 
 function currentDate() {
