@@ -46,7 +46,7 @@
                     <div class="auto-style1">
                     <asp:Label ID="lbl_radioFeedback" runat="server" CssClass="label" Text="Please let us know how your experience was below by choosing one of the options below"></asp:Label>
                     </div>
-                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" Height="16px" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" Width="87px">
+                    <asp:RadioButtonList ID="rbl_rating" runat="server" Height="16px" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" Width="87px">
                         <asp:ListItem>Excellent</asp:ListItem>
                         <asp:ListItem>Average</asp:ListItem>
                         <asp:ListItem>Poor</asp:ListItem>
@@ -54,7 +54,7 @@
                     <br />
                     <asp:RequiredFieldValidator ID="required_comment" runat="server" ControlToValidate="txt_feedback_comment" Display="Dynamic" ErrorMessage="Comment is Required" ForeColor="Red" CssClass="help is-danger has-text-weight-semibold"></asp:RequiredFieldValidator>
 
-                  <button class="button is-block is-info is-large is-fullwidth">Submit</button>
+                    <asp:Button ID="btn_Feedback" runat="server" CssClass="button is-block is-info is-large is-fullwidth" OnClick="btn_Feedback_Click" Text="Submit" />
                 </form>
               </div>
             </div>
