@@ -30,7 +30,8 @@ public partial class Login : System.Web.UI.Page
             string password = Passcom.ExecuteScalar().ToString().Replace(" ", "");
             if (password == passwordLogin_txt.Text)
             {
-
+                Session["New"] = loginEmail_txt.Text;
+                Session["the_cart"] = "";
                 Response.Redirect("LoginConfirmation.aspx");
             }
             else
@@ -42,6 +43,9 @@ public partial class Login : System.Web.UI.Page
         {
             Response.Write("Incorrect Login Information");
         }
-
+        if(User.Identity.IsAuthenticated)
+        {
+           
+        }
     }
 }

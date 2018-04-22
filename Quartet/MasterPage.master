@@ -43,13 +43,19 @@
                     Feed Back
                   </a>
                   <span class="navbar-item">
-                    <a class="button is-info is-outlined is-small" href="/login">
+                    <a class="button is-info is-outlined is-small" href="/login" id="login_icon">
                       <span class="icon">
                         <i class="fas fa-sign-in-alt"></i>
                       </span>
                       <span>Login</span>
                     </a>
                   </span>
+                    <a class="navbar-item" href="/MyAccount.aspx" id="accManage">
+                        My Acount
+                    </a>
+                    <a class="navbar-item" href="/MyCart.aspx" id="myCart">
+                        My Cart
+                    </a>
                 </div>
               </div>
             </div>

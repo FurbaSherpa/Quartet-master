@@ -44,7 +44,9 @@
                         <p class="subtitle has-text-info">A timeless classic</p>
                         <p class="subtitle">An original cut including neck and sideburn shave, scalp massage, wash and treatment and re-style. Complete with a rejuvenating shoulder and neck massage.</p>
                         <p class="is-text has-text-info">$49.99</p>
-                        <button class="button is-info">Select</button>
+                        <p class="is-text has-text-info">
+                            <asp:Button ID="btn_hairCuts" runat="server" CssClass="button is-info" OnClick="btn_hairCuts_Click" Text="Select" />
+                        </p>
                     </div>
                 </div>
             </div>
@@ -61,7 +63,9 @@
                         <p class="subtitle has-text-info">Sharp and Crisp</p>
                         <p class="subtitle">Perfect straight razor shave featuring hot and cold towels, essential oils, warm cream lather, and facial moisturizer. Complete with a rejuvenating shoulder and neck massage.</p>
                         <p class="is-text has-text-info">$34.99</p>
-                        <button class="button is-info" >Select</button>
+                        <p class="is-text has-text-info">
+                            <asp:Button ID="btn_straightRaz" runat="server" CssClass="button is-info" OnClick="btn_straightRaz_Click" Text="Select" />
+                        </p>
                     </div>
                 </div>
             </div>
@@ -80,7 +84,9 @@
                         <p class="subtitle has-text-info">A timeless classic</p>
                         <p class="subtitle">A precision shave featuring hot towel treatment, hot lather shave and and post shave cooling lotion.</p>
                         <p class="is-text has-text-info">$24.99</p>
-                        <button class="button is-info">Select</button>
+                        <p class="is-text has-text-info">
+                            <asp:Button ID="btn_LineUp" runat="server" CssClass="button is-info" OnClick="btn_LineUp_Click" Text="Button" />
+                        </p>
                     </div>
                 </div>
             </div>
@@ -96,7 +102,9 @@
                         <p class="subtitle has-text-info">A timeless classic</p>
                         <p class="subtitle">Massaging shampoo, cut and style, hot lather neck trim and rejuvenating neck massage. Includes complimentary edge-out between cuts to keep you looking sharp.</p>
                         <p class="is-text has-text-info">$64.99</p>
-                        <button class="button is-info">Select</button>
+                        <p class="is-text has-text-info">
+                            <asp:Button ID="btn_shampoo" runat="server" CssClass="button is-info" OnClick="btn_shampoo_Click" Text="Select" />
+                        </p>
                     </div>
                 </div>
             </div>
